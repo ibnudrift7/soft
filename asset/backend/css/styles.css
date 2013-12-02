@@ -1,0 +1,21 @@
+body{
+	background-color: #F5F5F5;
+	padding: 40px;
+}
+.form-signin{
+	width: 300px;
+	margin: 0px auto;
+	min-height: 200px;
+	background-color: #fff;
+	border: 1px solid #E5E5E5;
+	padding: 10px 30px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 6px rgba(50, 50, 50, 0.33);
+	-moz-box-shadow:    1px 1px 6px rgba(50, 50, 50, 0.33);
+	box-shadow:         1px 1px 6px rgba(50, 50, 50, 0.33);
+}
+.form-signin-heading{
+	
+}

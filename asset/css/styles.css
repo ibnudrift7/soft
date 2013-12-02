@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,700,300);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300);
+
+.clear{
+	clear: both;
+}
+.pabsolute{
+	position: absolute;
+}
+.list-service-home .item{
+	height: 345px;
+	overflow: hidden;
+}
+.list-service-home .item p{
+	line-height: 1.4 !important;
+}
