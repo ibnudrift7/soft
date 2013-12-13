@@ -202,6 +202,23 @@ class Page extends CActiveRecord
 		// exit;
 		return $query;
 	}
+
+	public function getPageIllustrasi($url, $languageId=1)
+	{
+		$query = Yii::app()->db->createCommand("
+		SELECT `t`.`id`, `t`.`parent`, `t`.`url`, `i`.`images` `image`
+		FROM `page` `t` 
+		INNER JOIN `page_description` `d` ON `t`.`id` = `d`.`page_id`
+		LEFT JOIN `page_illustrasi` `i` ON `t`.`id` = `i`.`id_page` WHERE
+		`t`.`url` = '$url' AND
+		`t`.`active` = '1' AND
+		`d`.`language_id` = $languageId
+		")->queryRow();
+		// print_r($query);
+		// exit;
+		return $query;
+	}
+
 	public function getSub($parent, $bila_sub_kosong, $languageId=1)
 	{
 		$query = Yii::app()->db->createCommand("

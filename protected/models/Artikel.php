@@ -57,7 +57,7 @@ class Artikel extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'artikelDesc'=>array(self::HAS_ONE, 'ArtikelDescription', 'artikel_id'),
-			'desc'=>array(self::HAS_ONE, 'ArtikelDescription', 'artikel_id',
+			'desc'=>array(self::HAS_ONE, 'ArtikelDescription', 'artikel_ids',
 				'condition'=>'desc.language_id = 2',
 			),
 		);

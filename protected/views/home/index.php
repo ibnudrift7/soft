@@ -98,7 +98,6 @@
 
                     <!-- Feature -->
                     <?php foreach ($layanan as $key => $v_layanan): ?>
-
                     <?php
                         $v_layanan = (object) $v_layanan;
                         $value['image'] = json_decode($v_layanan->image);
@@ -108,7 +107,7 @@
                     <div class="span4 feature item">
                         <div class="img_box">
                             <a href="services.html">
-                                <img src="<?php echo Yii::app()->baseUrl; ?>/asset/images/main/service3.png">
+                                <img src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(302,174, '/images/layanan/large/'.$value['image']->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>">
                                 <span class="circle"> 
                                     <span class="plus">&#43;</span>
                                 </span>

@@ -9,7 +9,7 @@ $this->menu=array(
 ?>
 
 <h1>Artikels</h1>
-<?php $this->widget('bootstrap.widgets.TbButtonGroup',array('buttons'=>$this->menu,)); ?><br/><br/>
+<?php $this->widget('bootstrap.widgets.TbButtonGroup',array( 'buttons'=>$this->menu, )); ?><br/><br/>
 <?php $this->widget('bootstrap.widgets.TbGridView',array(
 	'id'=>'artikel-grid',
 	'dataProvider'=>$model->search(),

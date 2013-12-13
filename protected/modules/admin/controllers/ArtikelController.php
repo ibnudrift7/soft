@@ -331,6 +331,7 @@ class ArtikelController extends ControllerAdmin
 			'dataProvider'=>$dataProvider,
 			'model'=>$model,
 		));
+
 	}
 
 	/**
